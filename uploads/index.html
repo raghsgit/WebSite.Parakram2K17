@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Parakram -  Annual Technical Fest organised by the students of IET Lucknow">
+    <meta name="author" content="<Web Team IET Lucknow/>">
+
+    <title>Parakram 2k17 - IET Lucknow</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+    
+    <!-- Material Design -->
+    <link rel="stylesheet" href="css/material.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <!-- Modal CSS -->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Tabs -->
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    
+    <style>
+    .demo-card-square.mdl-card {
+      width: 320px;
+      height: 320px;
+    }
+    .demo-card-square > .mdl-card__title {
+      color: #fff;
+      background: url('#') bottom right 15% no-repeat #46B6AC;
+    }
+    #btn-close-modal {
+        width:100%;
+        text-align: center;
+        cursor:pointer;
+        color:#fff;
+    }
+    form {
+    width: 300px;
+    margin: 0 auto;
+    }
+    #particles-js{
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    }
+    .box{
+    background-color:white;
+    padding:20px;
+    width:270px;
+    margin-left: 25px;
+    }
+    .content{
+    background-color: inherit;
+    color:black;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20px;
+    }
+    .heading{
+    font-size: 1.4em;
+    font-family: cursive;
+    }
+    .element{
+    margin-top:-15px;
+    font-family: sans-serif;
+        padding:20px;
+    }
+    .image{
+    max-height:100px;
+    max-width:100px;
+    border-radius:50%;
+    opacity:1;
+    box-sizing: 0;
+    }
+        .navbtn {
+            border: 0;
+            background: none;
+            margin-top: 18px !important;
+            font-size: 1em;
+            color: white;
+            margin-right: 0px;
+        }
+        .navbtn:hover {
+            color: yellow;
+        }
+        .navbar-default {
+            background-color: rgba(135,64,139,0.4) !important;
+        }
+</style>
+
+</head>
+
+<body id="top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html" style="font-family: gtek; letter-spacing: 2px;">parakram</a>
+            </div>
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <button class="navbtn" style="font-family: instruction;" onclick="location.href = 'index.html';">Home</button>
+                    </li>
+                    <li>
+                        <button class="navbtn" style="font-family: instruction;" onclick="location.href = '#events';">Events</button>
+                    </li>
+                    <li>
+                        <button class="navbtn" style="font-family: instruction;" onclick="location.href = '#sponsers';">Sponsers</button>
+                    </li>
+                    <li>
+                        <button class="navbtn" style="font-family: instruction;" onclick="location.href = '#team';">Team</button>
+                    </li>
+                    <li>
+                        <button class="navbtn" style="font-family: instruction;" onclick="location.href = '#contact';">Contact Us</button>
+                    </li>
+                    <!-- Accent-colored raised button with ripple -->
+                    <li>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style=" margin-left: 5px; margin-top: 5px; font-family: instruction;" id="demo00" href="#animatedModal">
+                      Sign Up
+                    </button>
+                    </li>
+                    <li>
+                       <button onclick="location.href = 'login.html';" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-top: 5px; margin-left: 15px; font-family: instruction;">
+                      Login
+                    </button>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    
+    
+    <header>
+        <div id="particles-js"></div>
+        <a href=""><img style="position: absolute;top: 50px; right: 0px;width: 150px;" src="img/Parakram%20logo2.png" /></a>
+        <a href="http://ietlucknow.edu/" target="_blank" ><img style="position: absolute;top: 60px; right: 150px;width: 90px;opacity:.6" src="img/iet.png" /></a>
+        <div class="container">
+            <div class="row">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+                            <h2 style="font-family: gtek; letter-spacing: 10px;">parakram</h2>
+                            <h6 style="font-family: space; margin: 20px;">break&nbsp;&nbsp;through&nbsp;&nbsp;the&nbsp;&nbsp;silence</h6>
+                            <h6 style="font-family: instruction; margin-left: 100px;">13&nbsp;&nbsp;-&nbsp;&nbsp;15&nbsp;&nbsp;April</h6>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </header>
+
+ <style>
+    #demo01:hover,#demo02:hover,#demo03:hover,#demo04:hover,#demo05:hover,#demo06:hover,#demo07:hover,#demo08:hover,#demo09:hover{
+        text-decoration: none;
+    }
+</style>   
+<!-- Square card -->
+<section id="events" style="background-color:#556;
+background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+background-size:80px 140px;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;">
+<div class="row" style="margin: auto;">
+<h2 style="font-family: gtek; text-align: center; color: white; margin-top: -60px;">events</h2>
+<div class="col-sm-4">
+<a class="demo-card-square mdl-card mdl-shadow--6dp" id="demo01" href="#modal-01" style="margin: 20px; height: 220px; width: 300px; ">
+  <div class="mdl-card__title mdl-card--expand">
+    <h2 class="mdl-card__title-text" style="font-family: instruction;">Computer Science engineering</h2>
+  </div>
+  <!--<div class="mdl-card__supporting-text" style="font-family: sans-serif;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenan convallis.
+  </div>-->
+</a>
+</div>
+
+<div class="col-sm-4">
+<a class="demo-card-square mdl-card mdl-shadow--6dp" id="demo02" href="#modal-02" style="margin: 20px; width: 300px; height: 220px;">
+  <div class="mdl-card__title mdl-card--expand">
+    <h2 class="mdl-card__title-text" style="font-family: instruction;">Chemical engineering</h2>
+  </div>
+  <!--<div class="mdl-card__supporting-text" style="font-family: sans-serif;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenan convallis.
+  </div>-->
+</a>
+</div>
+
+<div class="col-sm-4">
+<a class="demo-card-square mdl-card mdl-shadow--6dp" id="demo03" href="#modal-03" style="margin: 20px; height: 220px; width: 270px; ">
+  <div class="mdl-card__title mdl-card--expand">
+    <h2 class="mdl-card__title-text" style="font-family: instruction;">Civil Engineering</h2>
+  </div>
+  <!--<div class="mdl-card__supporting-text" style="font-family: sans-serif;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenan convallis.
+  </div>-->
+</a>
+</div>
+ 
+<div class="col-sm-4">    
+<a class="demo-card-square mdl-card mdl-shadow--6dp" id="demo04" href="#modal-04" style="margin: 20px; height: 220px; width: 300px; ">
+  <div class="mdl-card__title mdl-card--expand">
+    <h2 class="mdl-card__title-text" style="font-family: instruction;">Electrical Engineering</h2>
+  </div>
+  <!--<div class="mdl-card__supporting-text" style="font-family: sans-serif;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenan convallis.
+  </div>-->
+</a>
+</div>
+    
+<div class="col-sm-4">
+<a class="demo-card-square mdl-card mdl-shadow--6dp" id="demo05" href="#modal-05" style="margin: 20px; height: 220px; width: 300px; ">
+  <div class="mdl-card__title mdl-card--expand">
+    <h2 class="mdl-card__title-text" style="font-family: instruction;">Cosmos</h2>
+  </div>
+  <!--<div class="mdl-card__supporting-text" style="font-family: sans-serif;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenan convallis.
+  </div>-->
+</a>
+</div>
+
+<div class="col-sm-4">
+<a class="demo-card-square mdl-card mdl-shadow--6dp" id="demo06" href="#modal-06" style="margin: 20px; height: 220px; width: 270px; ">
+  <div class="mdl-card__title mdl-card--expand">
+    <h2 class="mdl-card__title-text" style="font-family: instruction;">Electronics Engineering</h2>
+  </div>
+  <!--<div class="mdl-card__supporting-text" style="font-family: sans-serif;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenan convallis.
+  </div>-->
+</a>
+</div>
+
+<div class="col-sm-4">
+<a class="demo-card-square mdl-card mdl-shadow--6dp" id="demo07" href="#modal-07" style="margin: 20px; height: 220px; width: 300px; ">
+  <div class="mdl-card__title mdl-card--expand">
+    <h2 class="mdl-card__title-text" style="font-family: instruction;">Mechanical Engineering</h2>
+  </div>
+  <!--<div class="mdl-card__supporting-text" style="font-family: sans-serif;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenan convallis.
+  </div>-->
+</a>
+</div>
+    
+<div class="col-sm-4">
+<a class="demo-card-square mdl-card mdl-shadow--6dp" id="demo08" href="#modal-08" style="margin: 20px; height: 220px; width: 300px; ">
+  <div class="mdl-card__title mdl-card--expand">
+    <h2 class="mdl-card__title-text" style="font-family: instruction;">MBA</h2>
+  </div>
+  <!--<div class="mdl-card__supporting-text" style="font-family: sans-serif;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenan convallis.
+  </div>-->
+</a>
+</div>
+    
+<div class="col-sm-4">
+<a class="demo-card-square mdl-card mdl-shadow--6dp" id="demo09" href="#modal-09" style="margin: 20px; height: 220px; width: 270px; ">
+  <div class="mdl-card__title mdl-card--expand">
+    <h2 class="mdl-card__title-text" style="font-family: instruction;">Miscellaneous</h2>
+  </div>
+  <!--<div class="mdl-card__supporting-text" style="font-family: sans-serif;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenan convallis.
+  </div>-->
+</a>
+</div>
+</div>
+</section>
+
+    <!--DEMO00-->
+        <div id="animatedModal">
+            <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+            <div  id="btn-close-modal" class="close-animatedModal"><i class="fa fa-times-circle-o" aria-hidden="true" style="font-size: 50px;"></i>
+            </div>
+                
+            <div class="modal-content" style="background-image: -moz-linear-gradient(#81a8cb, #cde6f9); /* Firefox */
+background-image: -webkit-linear-gradient(#81a8cb, #cde6f9); /* Webkit */">
+                <!--Your modal content goes here-->
+                <h2 style="font-family: gtek; text-align: center;">sign&nbsp;&nbsp;up</h2>
+                <form action="register.php" name="registerForm" role="form" method="post" onsubmit="return validateRegisterForm()" id="registerForm">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="name" pattern="[a-zA-Z_ ]{3,30}" name="name">
+                    
+                    <label class="mdl-textfield__label" for="name" style="font-family: teio; letter-spacing: 2px;" >Name...</label>
+                  </div>
+                    <br/>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="college" pattern=".{3,30}" name="college">
+                    <label class="mdl-textfield__label" for="college" style="font-family: teio; letter-spacing: 2px;">College...</label>
+                  </div>
+                    <br/>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" >
+                    <input class="mdl-textfield__input" type="text" pattern="\d{10}" id="phone" name="phone">
+                    <label class="mdl-textfield__label" for="contact" style="font-family: teio; letter-spacing: 2px;">Contact...</label>
+                    <span class="mdl-textfield__error">Input is not a number!</span>
+                  </div>
+                    <br/>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="email" id="email" name="email">
+                    <label class="mdl-textfield__label" for="email" style="font-family: teio; letter-spacing: 2px;">Email...</label>
+                    <span class="mdl-textfield__error">Input is not a Email!</span>
+                  </div>
+                    <br/>
+                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="password" id="pwd" pattern=".{6,30}" name="pwd" style="display:inline">
+                    <button title="show password" id="eye"type="button" onclick="if(pwd.type=='password') pwd.type='text';else pwd.type='password';"><i class="fa fa-eye"></i></button>
+                    <style>
+                        #eye{
+                            background:none;
+                            display: inline;
+                            border:none;
+                            box-shadow: none;
+                            position:absolute;
+                            top:20px;
+                            left:280px;
+
+                        }
+                    </style>
+
+                    <label class="mdl-textfield__label" for="pwd" style="font-family: teio; letter-spacing: 2px;">Password...</label>
+
+                    <span class="mdl-textfield__error">must be atleast 6 character long!</span>
+                  </div>
+                  <br/>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1" style="text-align: center; margin-top: 15px;">
+                      <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked value="yes" name="check">
+                      <span class="mdl-checkbox__label" style="font-family: instruction">Subscribe for Regular Updates!!</span>
+                    </label><br/>
+                    <br/>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-bottom: 20px ;margin-left: 100px; margin-top: 30px;">
+                      Submit
+                    </button>
+                    <script>
+                   function validateRegisterForm() {
+                        var m = document.forms["registerForm"]["name"].value;
+                        var n = document.forms["registerForm"]["college"].value;
+                        var o = document.forms["registerForm"]["phone"].value;
+                        var p = document.forms["registerForm"]["email"].value;
+                        var q = document.forms["registerForm"]["password"].value;
+                        var r = document.forms["registerForm"]["subscribe"].value;
+                        if (m == "" || n == "" || o == "" || p == "" || q == "" || r == "") {
+                            alert("Please fill out all fields !!");
+                            return false;
+                        }
+                    }
+                </script>
+                </form>
+                
+                </div>
+            </div>
+        <!--DEMO02-->
+        <div id="modal-02">
+            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+            <div  id="btn-close-modal" class="close-modal-02"><i class="fa fa-times-circle-o" aria-hidden="true" style="font-size: 50px;"></i></div>
+            
+            <div class="modal-content">
+                <!--Your modal content goes here-->
+                <div class="cd-tabs" style="color: #f8f7ee;">
+                <nav>
+                    <ul class="cd-tabs-navigation">
+                        <li><a data-content="1" class="selected" href="#0">SPOTLIGHT QUIZ</a></li>
+                        <li><a data-content="2" href="#0">FOOD ADULTERATION</a></li>
+                        <li><a data-content="3" href="#0">PATENT PRESENTATION</a></li>
+                        <li><a data-content="4" href="#0">FRUGAL</a></li>
+                        <li><a data-content="5" href="#0">INDUSTRIAL DESIGN PROBLEM</a></li>
+                    </ul> <!-- cd-tabs-navigation -->
+                </nav>
+
+                <ul class="cd-tabs-content">
+                    
+                    <li data-content="1" class="selected" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">spotlight quiz</h2>
+                        <p style="font-family: instruction; text-align: center;">Quiz regarding Chemical science and aptitude. It will be a 2 round contest.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 2<br/>Registration Amount- 20/- per team<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="2" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">food adulteration</h2>
+                        <p style="font-family: instruction; text-align: center;">Presentation on Food Adulteration. Time allotted will be 1:30 hour.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 3-4<br/>Registration Amount- 10/- per person<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="3" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">patent presentation</h2>
+                        <p style="font-family: instruction; text-align: center;">You have to give a presentation on Patenting. Time will be 1:30  hours.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 3-4<br/>Registration Amount- 10/- per person<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="4" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">frugal</h2>
+                        <p style="font-family: instruction; text-align: center;">Frugal regarding new ideas, inventions or anything prepared from waste material. Time allotted is 1:30 hours.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 3-4<br/>Registration Amount- 10/- per person<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="5" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">industrial design problem</h2>
+                        <p style="font-family: instruction; text-align: center;">Presentation or chart relating to any industrial design. Time allotted is 1:30 hour.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 3-4<br/>Registration Amount- 10/- per person<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                          Register Now
+                        </a>
+                        </div>
+                    </li>
+                </ul> <!-- cd-tabs-content -->
+            </div> <!-- cd-tabs -->
+            </div>
+        </div>
+    <style>
+    .cd-tabs-navigation li{
+        padding: 0 !important;
+        }
+        .cd-tabs-navigation li a {
+            text-decoration: none;
+            font-family: instruction;
+        }
+    </style>
+    <!--DEMO01-->
+        <div id="modal-01">
+            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+            <div  id="btn-close-modal" class="close-modal-01"><i class="fa fa-times-circle-o" aria-hidden="true" style="font-size: 50px;"></i></div>
+            
+            <div class="modal-content">
+                <!--Your modal content goes here-->
+                <div class="cd-tabs" style="color: #f8f7ee;">
+                <nav>
+                    <ul class="cd-tabs-navigation">
+                        <li><a data-content="1" class="selected" href="#0">CIPHERTECH</a></li>
+                        <li><a data-content="2" href="#0">TECH QUIZ</a></li>
+                        <li><a data-content="3" href="#0">CRYPTIA</a></li>
+                        <li><a data-content="4" href="#0">GOOGLER</a></li>
+                        <li><a data-content="5" href="#0">LAN Gaming</a></li>
+                        <li><a data-content="6" href="#0">CODASM</a></li>
+                        <li><a data-content="7" href="#0">bits &amp; divs</a></li>
+                        <li><a data-content="8" href="#0">IET Dialogue</a></li>
+                    </ul> <!-- cd-tabs-navigation -->
+                </nav>
+
+                <ul class="cd-tabs-content">
+                    <li data-content="1" class="selected" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">ciphertech</h2>
+                        <p style="font-family: instruction; text-align: center;">Encoded Questions will be given to participants who have to decipher the questions in the specified time. Time allotted is 1 hour.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 2<br/>Registration Amount- 20/- per team<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="2" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">tech quiz</h2>
+                        <p style="font-family: instruction; text-align: center;">Quiz Related to Computer Science and General Technology. A 4 round contest with each round of increasing difficulty.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 2<br/>Registration Amount- 50/- per team<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="3" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">cryptia</h2>
+                        <p style="font-family: instruction; text-align: center;">A Series of events will be shown. Every detail on the image will be a hint. With the help of those images, you have to reach the answer. It will be a online event to be conducted on PARAKRAM website.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 2<br/>Registration Amount- 20/- per team<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="4" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">googler</h2>
+                        <p style="font-family: instruction; text-align: center;">Images will be shown to you. You have to search approximately near picture or exactly the same picture on GOOGLE.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 2<br/>Registration Amount- 20/- per team<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="5" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">lan gaming</h2>
+                        <p style="font-family: instruction; text-align: center;">Counter Strike 1.6<br/>Entry fee – 500/- per team<br/>
+Prize money – 4000/-</p>
+                        <p style="text-align: center; font-family: instruction;">FIFA 15<br/>Entry fee – 100/- per person<br/>Prize money – 500/-<br/></p>
+                        <p style="text-align: center; font-family: instruction;">NFS Most Wanted<br/>Entry fee – 100/- per person<br/>Prize money- 500/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="6" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">codasm</h2>
+                        <p style="font-family: instruction; text-align: center;">Students compete on online coding portal to solve real life problems.</p>
+
+                        <p style="text-align: center; font-family: instruction;">INDIVIDUAL EVENT<br/>Registration Amount- Free<br/>Prize Money- 1000/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+                    <li data-content="7" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">bits and divs</h2>
+                        <p style="font-family: instruction; text-align: center;">An online event for learning web development in an easy and interesting way. The event is divided in 3 steps. It will be conducted on PARAKRAM website.</p>
+
+                        <p style="text-align: center; font-family: instruction;">INDIVIDUAL EVENT<br/>Registration Amount- Free<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="8" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">iet dialogue</h2>
+                        <p style="font-family: instruction; text-align: center;">Seminar and Influential talks by senior faculty, Alumni and Final Year Students.</p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+                </ul> <!-- cd-tabs-content -->
+            </div> <!-- cd-tabs -->
+            </div>
+        </div>
+    
+    <!--DEMO03-->
+        <div id="modal-03">
+            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+            <div  id="btn-close-modal" class="close-modal-03"><i class="fa fa-times-circle-o" aria-hidden="true" style="font-size: 50px;"></i></div>
+            
+            <div class="modal-content">
+                <!--Your modal content goes here-->
+                <div class="cd-tabs" style="color: #f8f7ee;">
+                <nav>
+                    <ul class="cd-tabs-navigation">
+                        <li><a data-content="1" class="selected" href="#0">UNDERWATER PROJECT</a></li>
+                        <li><a data-content="2" href="#0">BRIDGE BUILDING AND DESIGNING</a></li>
+                        <li><a data-content="3" href="#0">MACROCOSM</a></li>
+                        <li><a data-content="4" href="#0">PICTURESQUE</a></li>
+                        <li><a data-content="5" href="#0">FINAL YEAR SLOT</a></li>
+                    </ul> <!-- cd-tabs-navigation -->
+                </nav>
+
+                <ul class="cd-tabs-content">
+                    
+                    <li data-content="1" class="selected" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">underwater project</h2>
+                        <p style="font-family: instruction; text-align: center;">You are the Senior Structural Engineering of company. You have got a project for designing an underwater resort. (In AUTOCAD/STAAD PRO/REAL 3D MODEL/POWERPOINT)</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 5 (Max.)<br/>Registration Amount- 50/- per team<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="2" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">bridge building and designing</h2>
+                        <p style="font-family: instruction; text-align: center;">Build a structure as you wish from the material given to you, where your imagination is the only restriction. The bet models will be awarded.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 5<br/>Registration Amount- 80/- per team<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="3" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">macrocosm</h2>
+                        <blockquote style="font-family: instruction; color: black; text-align: center;">“We are who the cosmos made conscious”</blockquote>
+                        <p style="font-family: instruction; text-align: center;">A short quiz event on space and celestial bodies. Universe exploration through questionaire.</p>
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 2<br/>Registration Amount- 20/- per team<br/>Prize Money- 600/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="4" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">picturesque</h2>
+                        <blockquote style="font-family: instruction; color: black; text-align: center;">“The reward of a labor is life. Is that not enough?”</blockquote>
+                        <p style="font-family: instruction; text-align: center;">A special treat for all photography enthusiasts! Participate in the competition and let your imagination speak for itself!<br/>Mail your photograph on the theme “SAFETY FIRST” that portrays the risks and hazards of construction workers to <a href="mailto:parakram2k17ietlko@gmail.com">parakram2k17ietlko@gmail.com</a> .</p>
+
+                        <p style="text-align: center; font-family: instruction;">Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="5" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">final year slot</h2>
+                        <p style="font-family: instruction; text-align: center;">Get a chance to interact directly with the seniors qualified in GATE/CAT.</p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                          Register Now
+                        </a>
+                        </div>
+                    </li>
+                </ul> <!-- cd-tabs-content -->
+            </div> <!-- cd-tabs -->
+            </div>
+        </div>
+    
+    <!--DEMO04-->
+        <div id="modal-04">
+            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+            <div  id="btn-close-modal" class="close-modal-04"><i class="fa fa-times-circle-o" aria-hidden="true" style="font-size: 50px;"></i></div>
+            
+            <div class="modal-content">
+                <!--Your modal content goes here-->
+                <div class="cd-tabs" style="color: #f8f7ee;">
+                <nav>
+                    <ul class="cd-tabs-navigation">
+                        <li><a data-content="1" class="selected" href="#0">SPARK</a></li>
+                        <li><a data-content="2" href="#0">ELECTRIATION</a></li>
+                        <li><a data-content="3" href="#0">STOP TO WIN</a></li>
+                        <li><a data-content="4" href="#0">INNOVATION AND YOU</a></li>
+                    </ul> <!-- cd-tabs-navigation -->
+                </nav>
+
+                <ul class="cd-tabs-content">
+                    
+                    <li data-content="1" class="selected" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">spark</h2>
+                        <p style="font-family: instruction; text-align: center;">It is an individual talent showcase in the field of electrical industry. Bring out the best research of yours in field of electrical applications.</p>
+
+                        <p style="text-align: center; font-family: instruction;">INDIVIDUAL EVENT<br/>Registration Amount- 10/- per team<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="2" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">electriation</h2>
+                        <p style="font-family: instruction; text-align: center;">A well defined presentation of electrical energy with sustainable development or by use of any other alternatives.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 3<br/>Registration Amount- 30/- per team<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="3" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">stop to win</h2>
+                        <p style="font-family: instruction; text-align: center;">First round will be AV quiz related to electrical ,general knowledge and aptitude.<br/>In second round, you will be provided with some electrical circuits and you have to find the required output.
+</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 2<br/>Registration Amount- 30/- per team<br/>Prize Money- 600/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="4" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">innovation and you</h2>
+                        <p style="font-family: instruction; text-align: center;">Frugal regarding new ideas, inventions or anything prepared from waste material. Time allotted is 1:30 hours.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 3-4<br/>Registration Amount- 10/- per person<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+                </ul> <!-- cd-tabs-content -->
+            </div> <!-- cd-tabs -->
+            </div>
+        </div>
+    
+        <!--DEMO05-->
+        <div id="modal-05">
+            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+            <div  id="btn-close-modal" class="close-modal-05"><i class="fa fa-times-circle-o" aria-hidden="true" style="font-size: 50px;"></i></div>
+            
+            <div class="modal-content">
+                <!--Your modal content goes here-->
+                <div class="cd-tabs" style="color: #f8f7ee;">
+                <nav>
+                    <ul class="cd-tabs-navigation">
+                        <li><a data-content="1" class="selected" href="#0">ASTRO QUIZ</a></li>
+                        <li><a data-content="2" href="#0">FAKE RESEARCH</a></li>
+                        <li><a data-content="3" href="#0">MINE THE SKY</a></li>
+                    </ul> <!-- cd-tabs-navigation -->
+                </nav>
+
+                <ul class="cd-tabs-content">
+                    
+                    <li data-content="1" class="selected" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">astro quiz</h2>
+                        <p style="font-family: instruction; text-align: center;">It is a quiz based on astronomy. A 2 round event with 1 hour for each round.</p>
+
+                        <p style="text-align: center; font-family: instruction;">INDIVIDUAL EVENT<br/>Registration Amount- 20/- per person<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="2" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">fake research</h2>
+                        <p style="font-family: instruction; text-align: center;">A fake research is to be conducted. A two round event with 2 hours each.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 2<br/>Registration Amount- 20/- per person<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="3" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">mine the sky</h2>
+                        <p style="font-family: instruction; text-align: center;">A presentation type event. Two round event with one hour each.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 4<br/>Registration Amount- 10/- per person<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+                </ul> <!-- cd-tabs-content -->
+            </div> <!-- cd-tabs -->
+            </div>
+        </div>
+    
+        <!--DEMO06-->
+        <div id="modal-06">
+            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+            <div  id="btn-close-modal" class="close-modal-06"><i class="fa fa-times-circle-o" aria-hidden="true" style="font-size: 50px;"></i></div>
+            
+            <div class="modal-content">
+                <!--Your modal content goes here-->
+                <div class="cd-tabs" style="color: #f8f7ee;">
+                <nav>
+                    <ul class="cd-tabs-navigation">
+                        <li><a data-content="1" class="selected" href="#0">CIRCUITRIX</a></li>
+                        <li><a data-content="2" href="#0">QUIZ O MANIA</a></li>
+                        <li><a data-content="3" href="#0">TECH PAPER PRESENTATION</a></li>
+                        <li><a data-content="4" href="#0">KON TRIVENCE</a></li>
+                        <li><a data-content="5" href="#0">KICK - O - BOT</a></li>
+                        <li><a data-content="6" href="#0">SOI - COURIER</a></li>
+                    </ul> <!-- cd-tabs-navigation -->
+                </nav>
+
+                <ul class="cd-tabs-content">
+                    
+                    <li data-content="1" class="selected" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">circuitrix</h2>
+                        <p style="font-family: instruction; text-align: center;">A two round contest. Round 1 is a basic quiz related to electronics. Round 2 will be a team event which will require one to have knowledge about implementation of logic using gates on breadboard.</p>
+
+                        <p style="text-align: center; font-family: instruction;">INDIVIDUAL EVENT<br/>Registration Amount- 10/- per person<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="2" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">quiz o mania</h2>
+                        <p style="font-family: instruction; text-align: center;">A three round quiz event. Virtual money will be given to every individual which will help them to survive in further round.</p>
+
+                        <p style="text-align: center; font-family: instruction;">INDIVIDUAL EVENT<br/>Registration Amount- 20/- per person<br/>Prize Money- 700/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="3" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">tech paper presentation</h2>
+                        <p style="font-family: instruction; text-align: center;">Motive of the event is to make students understand the importance of presentation and it will surely help them to enhance our soft skill. Presentation format : IJARIIT   
+The topic is open to all subjects.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 4 (Max.)<br/>Registration Amount- 40/- per team<br/>Prize Money- 800/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="4" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">kon trivence</h2>
+                        <p style="font-family: instruction; text-align: center;">An unknown enemy has launched a sudden attack on your fortress. As the fortress last defense you are to defend the fortress and rescue the injured. You are provided with a vehicle (bot) and your aim is rescue the injured from the battlefield (arena) and then launch an attack to win over your enemy.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 5 (Max.)<br/>Exciting prizes to be won<br/></p>
+                        <p style="text-align: center; font-family: instruction;">**The registration amount for Soi-Courier, Kick-o-bot and Kon Trivence combined is 500/-</p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="5" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">kick - o - bot</h2>
+                        <p style="font-family: instruction; text-align: center;">It is a manual operated bot event. The bot is required to show off soccer's skills. A group will consist of two teams with one acting as an attacker and the other as defender.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 5 (Max.)<br/>Exciting prizes to be won<br/></p>
+                        <p style="text-align: center; font-family: instruction;">**The registration amount for Soi-Courier, Kick-o-bot and Kon Trivence combined is 500/-</p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                          Register Now
+                        </a>
+                        </div>
+                    </li>
+                    
+                    <li data-content="6" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">soi - courier</h2>
+                        <p style="font-family: instruction; text-align: center;">Autonomous bot event. It will be a 2 round event</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 5 (Max.)<br/>Exciting prizes to be won<br/></p>
+                        <p style="text-align: center; font-family: instruction;">**The registration amount for Soi-Courier, Kick-o-bot and Kon Trivence combined is 500/-</p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                          Register Now
+                        </a>
+                        </div>
+                    </li>
+                </ul> <!-- cd-tabs-content -->
+            </div> <!-- cd-tabs -->
+            </div>
+        </div>
+    
+            <!--DEMO07-->
+        <div id="modal-07">
+            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+            <div  id="btn-close-modal" class="close-modal-07"><i class="fa fa-times-circle-o" aria-hidden="true" style="font-size: 50px;"></i></div>
+            
+            <div class="modal-content">
+                <!--Your modal content goes here-->
+                <div class="cd-tabs" style="color: #f8f7ee;">
+                <nav>
+                    <ul class="cd-tabs-navigation">
+                        <li><a data-content="1" class="selected" href="#0">MECH AV QUIZ</a></li>
+                        <li><a data-content="2" href="#0">AUTOMOBILE QUIZ</a></li>
+                        <li><a data-content="3" href="#0">ME EVENT</a></li>
+                    </ul> <!-- cd-tabs-navigation -->
+                </nav>
+
+                <ul class="cd-tabs-content">
+                    
+                    <li data-content="1" class="selected" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">mech av quiz</h2>
+                        <p style="font-family: instruction; text-align: center;">A two round quiz event based on basic mechanical engineering concepts.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 2<br/>Registration Amount- 20/- per team<br/>Prize Money- 500/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="2" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">automobile quiz</h2>
+                        <p style="font-family: instruction; text-align: center;">A two round quiz event. First round will be a pen and paper based test. The second round will be a personal interview.</p>
+
+                        <p style="text-align: center; font-family: instruction;">INDIVIDUAL EVENT<br/>Registration Amount- 10/- per person<br/>Prize Money- 500/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="3" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">me event</h2>
+                        <p style="font-family: instruction; text-align: center;">Teams will have to create a working model and they will be judged on the basis of the usefulness of project in real life.</p>
+
+                        <p style="text-align: center; font-family: instruction;">TEAM OF 5 (Max.)<br/>Registration Amount- 50/- per team<br/>Prize Money- 1000/-<br/></p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+                </ul> <!-- cd-tabs-content -->
+            </div> <!-- cd-tabs -->
+            </div>
+        </div>
+    
+    <!--DEMO08-->
+        <div id="modal-08">
+            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+            <div  id="btn-close-modal" class="close-modal-08"><i class="fa fa-times-circle-o" aria-hidden="true" style="font-size: 50px;"></i></div>
+            
+            <div class="modal-content">
+                <!--Your modal content goes here-->
+                <div class="cd-tabs" style="color: #f8f7ee;">
+                <nav>
+                    <ul class="cd-tabs-navigation">
+                        <li><a data-content="1" class="selected" href="#0">E-CELL SUMMIT</a></li>
+                    </ul> <!-- cd-tabs-navigation -->
+                </nav>
+
+                <ul class="cd-tabs-content">
+                    
+                    <li data-content="1" class="selected" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">e-cell summit</h2>
+                        <p style="font-family: instruction; text-align: center;">IET is going to organize an E-Cell Summit program. The Entrepreneurship cell of IET Lucknow willhelp in your startup regarding promotions, teams, investments and provides a platform to motivate students in a direction of making a job creator rather a job seeker.</p>
+                         <p style="text-align: center; font-family: instruction;">CONTACT-<br/>Kishore Yadav(9889930851)<br/>Saurabh(9634251163)<br/></p>
+
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >Register Now</a>
+                        </div>
+                    </li>
+                </ul> <!-- cd-tabs-content -->
+            </div> <!-- cd-tabs -->
+            </div>
+        </div>
+    
+            <!--DEMO09-->
+        <div id="modal-09">
+            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+            <div  id="btn-close-modal" class="close-modal-09"><i class="fa fa-times-circle-o" aria-hidden="true" style="font-size: 50px;"></i></div>
+            
+            <div class="modal-content">
+                <!--Your modal content goes here-->
+                <div class="cd-tabs" style="color: #f8f7ee;">
+                <nav>
+                    <ul class="cd-tabs-navigation">
+                        <li><a data-content="1" class="selected" href="#0">WORKSHOPS</a></li>
+                        <li><a data-content="2" href="#0">OTHER EVENTS</a></li>
+                    </ul> <!-- cd-tabs-navigation -->
+                </nav>
+
+                <ul class="cd-tabs-content">
+                    
+                    <li data-content="1" class="selected" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">workshops</h2>
+                        <p style="font-family: instruction; text-align: center;">Information related workshops will be posted here.</p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >Register Now</a>
+                        </div>
+                    </li>
+
+                    <li data-content="2" style="margin-left: -50px;">
+                        <h2 style="font-family: gtek;color: black;">other events</h2>
+                        <p style="font-family: instruction; text-align: center;">Information regarding any other event will be posted here.</p>
+                        <div style="text-align: center;">
+                        <a style="text-decoration: none;" href="login.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Register Now</a>
+                        </div>
+                    </li>
+                </ul> <!-- cd-tabs-content -->
+            </div> <!-- cd-tabs -->
+            </div>
+        </div>
+    
+    <!--DEMO010-->
+        <div id="modal-010">
+            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+            <div  id="btn-close-modal" class="close-modal-010"><i class="fa fa-times-circle-o" aria-hidden="true" style="font-size: 50px;"></i></div>
+            <div class="modal-content" style="background:
+linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+background-color:#708090;
+background-size: 64px 128px">
+                <!--Your modal content goes here-->
+                           
+        <div class="row" style="margin: auto;">
+            <div class="col-sm-4">
+            <h2 style="font-family: gtek; color: white; text-align: center; margin-top: -50px;">t&nbsp;e&nbsp;a&nbsp;m</h2>
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 10px;">
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 20px;">
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px; margin-left: 0;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 10px;" >
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            
+        </div>
+            <div class="row" style="margin: auto; margin-top: 50px;">
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 10px;">
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 20px;">
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px; margin-left: 0;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 10px;" >
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+        </div>
+                            <div class="row" style="margin: auto; margin-top: 50px;">
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 10px;">
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 20px;">
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px; margin-left: 0;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 10px;" >
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+        </div>
+                            <div class="row" style="margin: auto; margin-top: 50px;">
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 10px;">
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 20px;">
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px; margin-left: 0;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 10px;" >
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+        </div>
+                            <div class="row" style="margin: auto; margin-top: 50px;">
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 10px;">
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 20px;">
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px; margin-left: 0;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 10px;" >
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+        </div>
+                            <div class="row" style="margin: auto; margin-top: 50px;">
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 10px;">
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 20px;">
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px; margin-left: 0;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 10px;" >
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+        </div>
+            </div>
+        </div>
+    
+    <section id="sponsers" style="background-color:#269;
+background-image: linear-gradient(white 2px, transparent 2px),
+linear-gradient(90deg, white 2px, transparent 2px),
+linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px">
+            <h2 style="font-family: gtek; color: white; letter-spacing: 10px; text-align: center; margin-top: -50px;">sponsers</h2>
+            <div class="row" style="margin-left: 20px;">
+                <div class="col-sm-4"><img style="width: 270px; margin: 20px;" src="img/default.png"/></div>
+                <div class="col-sm-4"><img style="width: 270px; margin: 20px;" src="img/default.png"/></div>
+                <div class="col-sm-4"><img style="width: 270px; margin: 20px;" src="img/default.png"/></div>
+            </div>
+            <div class="row" style="margin-left: 20px;">
+                <div class="col-sm-4"><img style="width: 270px; margin: 20px;" src="img/default.png"/></div>
+                <div class="col-sm-4"><img style="width: 270px; margin: 20px;" src="img/default.png"/></div>
+                <div class="col-sm-4"><img style="width: 270px; margin: 20px;" src="img/default.png"/></div>
+            </div>
+    </section>
+    
+    <section id="team" style="background:
+linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+background-color:#708090;
+background-size: 64px 128px">
+            <h2 style="font-family: gtek; color: white; text-align: center; margin-top: -50px;">t&nbsp;e&nbsp;a&nbsp;m</h2>
+        <div class="row" style="margin: auto;">
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 10px;">
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 20px;">
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px; margin-left: 0;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 10px;" >
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            
+        </div>
+            <div class="row" style="margin: auto; margin-top: 50px;">
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 10px;">
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 20px;">
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px; margin-left: 0;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            <div class="col-sm-4">
+            <table class="box" style="background-color: rgba(0,0,0,0.4);">
+            <tr>
+            <td style="padding-left: 10px;" >
+            <img src="img/default.png" class="image">
+            </td>
+            <td class="content" style="padding: 20px;">
+            <p class="heading" style="color: #cca400;">Raghvendra Sharma</p>
+            <p class="element" style="color: white; font-family: instruction">Computer Science branch</p>
+            </td>
+            </tr>
+            </table>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="contact" class="contact bg-primary" style="background: url('img/bg-pattern.png'), linear-gradient(to left, #dc2430, #24478f);">
+        <div class="container">
+            <h2 style="font-family: gtek; margin-top: -50px;">contact us</h2>
+            <form name="myForm" method="post" role="form" onsubmit="return validateForm()" action="contact.php">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" pattern="[a-zA-Z_ ]{3,30}" name="name" id="name">
+                <label class="mdl-textfield__label" for="name" style="font-family: teio; letter-spacing: 2px;">Name...</label>
+              </div>
+                <br/>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" pattern=".{3,30}" name="college" id="college">
+                <label class="mdl-textfield__label" for="college" style="font-family: teio; letter-spacing: 2px;">College...</label>
+              </div>
+                <br/>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" pattern="\d{10}" name="contact" id="contact">
+                <label class="mdl-textfield__label" for="contact" style="font-family: teio; letter-spacing: 2px;">Contact...</label>
+                <span class="mdl-textfield__error">Input is not a number!</span>
+              </div>
+                <br/>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="email" name="email" id="email">
+                <label class="mdl-textfield__label" for="email" style="font-family: teio; letter-spacing: 2px;">Email...</label>
+                <span class="mdl-textfield__error">Input is not a Email!</span>
+              </div>
+                <br/>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <textarea class="mdl-textfield__input" type="text" pattern=".{3,150}" name="message" rows= "3" id="message"></textarea>
+                <label class="mdl-textfield__label" for="message" style="font-family: teio; letter-spacing: 2px;">Message...</label>
+                </div>
+                <br/>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                  Submit
+                </button>
+                <script>
+                   function validateForm() {
+                        var a = document.forms["myForm"]["name"].value;
+                        var b = document.forms["myForm"]["college"].value;
+                        var c = document.forms["myForm"]["contact"].value;
+                        var d = document.forms["myForm"]["email"].value;
+                        var e = document.forms["myForm"]["message"].value;
+                        if (a == "" || b == "" || c == "" || d == "" || e == "") {
+                            alert("Please fill out all fields !!");
+                            return false;
+                        }
+                    }
+                </script>
+            </form>
+        </div>
+    </section>
+
+    <footer style="background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#282828;
+background-size:16px 16px;">
+        <div class="container">
+            <p style="font-family: instruction; font-size: 1em;">&copy; 2017 PARAKRAM. All Rights Reserved.</p>
+            <br/>
+            <p style="font-family: instruction; font-size: 1.2em;">Website by Vishal Polley and Raghvendra Sharma</p>
+            <br/>
+            <ul class="list-inline">
+                <li>
+                    <a style="font-family: instruction; font-size: 1em;" href="#">Rule Book</a>
+                </li>
+                <li>
+                    <a style="font-family: instruction; font-size: 1em;" class="page-scroll" href="#events">Events</a>
+                </li>
+                <li>
+                    <a style="font-family: instruction; font-size: 1em;" href="https://www.google.co.in/maps/place/Institute+of+Engineering+and+Technology(IET)/@26.9145915,80.9397647,17z/data=!3m1!4b1!4m5!3m4!1s0x3999564d2761d695:0xffaa6ccef8c6ddae!8m2!3d26.9145915!4d80.9419534" target="_blank">Find Us</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+    
+    <!-- jQuery -->
+    <script src="lib/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.js"></script>
+    
+    <!-- Material Script -->
+    <script src="js/material.js"></script>
+    
+    <!-- Modal js-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/animatedModal.min.js"></script>
+    <script>
+
+            //demo 00
+            $("#demo00").animatedModal({
+                color:'#3498db',
+            });
+
+            //demo 02
+            $("#demo02").animatedModal({
+                modalTarget:'modal-02',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'bounceOutDown',
+                color:'#3498db',
+            });
+        
+            //demo 01
+            $("#demo01").animatedModal({
+                modalTarget:'modal-01',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'bounceOutDown',
+                color:'#3498db',
+            });
+            
+            //demo 03
+            $("#demo03").animatedModal({
+                modalTarget:'modal-03',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'bounceOutDown',
+                color:'#3498db',
+            });
+        
+            //demo 04
+            $("#demo04").animatedModal({
+                modalTarget:'modal-04',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'bounceOutDown',
+                color:'#3498db',
+            });
+            //demo 05
+            $("#demo05").animatedModal({
+                modalTarget:'modal-05',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'bounceOutDown',
+                color:'#3498db',
+            });
+        
+            //demo 06
+            $("#demo06").animatedModal({
+                modalTarget:'modal-06',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'bounceOutDown',
+                color:'#3498db',
+            });
+            
+            //demo 07
+            $("#demo07").animatedModal({
+                modalTarget:'modal-07',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'bounceOutDown',
+                color:'#3498db',
+            });
+        
+            //demo 08
+            $("#demo08").animatedModal({
+                modalTarget:'modal-08',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'bounceOutDown',
+                color:'#3498db',
+            });
+            
+            //demo 09
+            $("#demo09").animatedModal({
+                modalTarget:'modal-09',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'bounceOutDown',
+                color:'#3498db',
+            });
+        
+            //demo 010
+            $("#demo010").animatedModal({
+                modalTarget:'modal-010',
+                color:'#3498db',
+            });
+
+     </script>
+    <!-- Tabs -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+    
+    <!-- Particles -->
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    
+    <!-- Notify js -->
+    <script src="js/notify.js"></script>
+
+
+</body>
+
+</html>

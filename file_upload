@@ -1,0 +1,33 @@
+<?php
+$target_dir = "uploads/";
+$target_file = $target_dir . basename($_FILES["file"]["name"]);
+$uploadOk=1;
+$err="";
+$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+if(isset($_POST["submit"])) {
+ if($imageFileType != "html") {
+    $err= "Sorry, only htmlfile is allowed.";
+    $uploadOk = 0;
+}
+else{
+
+ if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
+        err= "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+    } else {
+        echo "Sorry, there was an error uploading your file.";
+    }
+
+}
+}
+?>
+<html>
+<head>
+   <title>file upload</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data" action="">
+        <input type="file" name="file">
+        <input type="submit" name="submit">
+    </form>
+</body>
+</html>

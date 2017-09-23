@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Techweb</title>
+    
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+    
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery-1.11.1.min.js"></script> 
+    
+<!-- start-smoth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+		
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+    
+</head>
+<body >
+<!--email id and contact number-->
+<div class="container-fluid">        
+    <div class="navbar-default">
+        <div class="container-fluid">
+        <div class="row "  style="padding-top:12px; padding-bottom:12px;width:100%">
+            <div class="col-sm-6">
+                <a href="#">
+                    <span class="glyphicon glyphicon-envelope"  face="MonotypeCorsiva"size="5px" >
+                       Sraghucsea016@gmail.com
+                    </span>
+                </a>
+            </div>
+            <div class="col-sm-6" style="text-align:right">
+                <a href="#">
+                    <span class="glyphicon glyphicon-earphone" style="font-face:Comic Sans MS">
+                    </span>&nbsp;+91&nbsp;9519759921
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+	<!--navigation-->
+	<div class="top-nav">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"> <span class="jlogo">TECH</span>web</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-center cl-effect-15">
+						<li><a href="raghs.html"  data-hover="Home">Home</a></li>
+						<li><a href="#about"  data-hover="About">About</a></li>					
+						<li><a href="#team"  data-hover="Instructors">Instructors</a></li>
+						<li><a href="#services"  data-hover="Services">Services</a></li>
+						<li><a href="#gallery"  data-hover="Gallery">Gallery</a></li>
+						<li><a href="#news"  data-hover="News">News</a></li>			
+						<li><a href="#" class="active" data-hover="Contact">Contact</a></li>
+					</ul>	
+					<div class="clearfix"> </div>
+				</div>
+			</div>	
+		</nav>		
+	</div>	
+			<!-- script-for sticky-nav --> 
+			<script>
+			$(document).ready(function() {
+				 var navoffeset=$(".top-nav").offset().top;
+				 $(window).scroll(function(){
+					var scrollpos=$(window).scrollTop(); 
+					if(scrollpos >=navoffeset){
+						$(".top-nav").addClass("fixed");
+					}else{
+						$(".top-nav").removeClass("fixed");
+					}
+				 });
+				 
+			});
+			</script>
+			<!--//script-for sticky-nav -->
+	<!--contact-->
+	<div id="contact" class="contact">
+		<div class="container">
+			
+			<h3 class="title">Contact Us</h3>	
+			<div class="col-md-7 contact-right">				
+				<form>
+					<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+					<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input type="text" value="Telephone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone';}" required="">
+					<textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+					<input type="submit" value="Submit" >
+				</form>
+			</div>
+			<div class="col-md-5 contact-left">
+				<p>"Lorem Ipsum"is the common name dummy text often used in the design, printing, and type setting industriescommon name dummy text often used in the design, printing, and type setting industries. "</p>
+				<ul>
+					<li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+						756 globel Place, Australia.
+					</li>					
+					<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+						+123 2222 222
+					</li>
+					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+						<a href="mailto:example@mail.com">mail@example.com</a>
+					</li>
+				</ul>
+			</div>						
+			<div class="clearfix"> </div>
+		</div>			
+	</div>
+    <!--//contact-->
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<p> © 2015  . All rights reserved | Design by <a href="http://w3layouts.com">Raghvendra Sharma</a></p>
+		</div>
+	</div>
+	<!--//footer--> 
+    <script src="js/bootstrap.js"></script>
+</div>
+</body>
+</html>
